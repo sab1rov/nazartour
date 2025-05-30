@@ -1,0 +1,123 @@
+.about {
+    @include adaptive-value("padding-top", 80, 40, 1);
+    @include adaptive-value("padding-bottom", 80, 40, 1);
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 120px;
+        @include adaptive-value("gap", 120, 60, 1);
+
+        @include media(1024) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin-left: 50px;
+        border-radius: 78px;
+        img {
+            @include adaptive-value("height", 700, 400, 1);
+            border-radius: 78px;
+            width: 100%;
+        }
+
+        @include media(1024) {
+            margin: 0;
+        }
+    }
+
+    &__content {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media(1024) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value("font-size", 42, 36, 1);
+        color: $black;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        @include adaptive-value("font-size", 18, 14, 1);
+        line-height: 200%;
+        color: $gray;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__button {
+        box-shadow: 4px 8px 25px 0 rgba(62, 134, 245, 0.25);
+        border: 1px solid $blue;
+        border-radius: 10px;
+        background-color: $blue;
+        font-weight: 400;
+        font-size: 20px;
+        color: $white;
+        padding: 22px 34px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: transparent;
+            color: $blue;
+        }
+    }
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    @include adaptive-value("padding-top", 24, 16, 1);
+    @include adaptive-value("padding-bottom", 24, 16, 1);
+    @include adaptive-value("padding-left", 30, 20, 1);
+    @include adaptive-value("padding-right", 30, 20, 1);
+    @include adaptive-value("width", 180, 100, 1);
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    background: $white;
+    border-radius: 35px;
+
+    &__title {
+        line-height: 100%;
+        font-weight: 600;
+        @include adaptive-value("font-size", 36, 22, 1);
+        color: $blue;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        @include adaptive-value("font-size", 18, 12, 1);
+        color: $black;
+    }
+
+    &__first {
+        top: 15%;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    &__second {
+        top: 50%;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    &__third {
+        bottom: 15%;
+        right: 0;
+        transform: translateX(50%);
+    }
+}

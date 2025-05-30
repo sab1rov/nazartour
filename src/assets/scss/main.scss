@@ -1,0 +1,18 @@
+// Global
+
+@import "./global/normalize";
+@import "./global/varaibles";
+
+// Mixins
+
+@import "./mixins/mixins";
+
+// Components
+
+@import "./components/banner";
+@import "./components/offers";
+@import "./components/about";
+@import "./components/recommended";
+@import "./components/comments";
+@import "./components/register";
+@import "./components/footer";

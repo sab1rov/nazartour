@@ -1,0 +1,38 @@
+.footer {
+    @include adaptive-value("padding-bottom", 80, 40, 1);
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        @include media(678) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        font-weight: 500;
+        @include adaptive-value("font-size", 20, 14, 1);
+        line-height: 209%;
+        color: $gray;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        @include adaptive-value("gap", 50, 25, 1);
+    }
+
+    &__nav-item {
+        font-weight: 500;
+        @include adaptive-value("font-size", 24, 16, 1);
+        color: rgba(0, 0, 0, 0.75);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

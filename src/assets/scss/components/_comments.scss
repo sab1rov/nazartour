@@ -1,0 +1,77 @@
+.comments {
+    @include adaptive-value("padding-top", 80, 40, 1);
+    @include adaptive-value("padding-bottom", 80, 40, 1);
+}
+
+.comments-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include media(924) {
+        justify-content: center;
+        gap: 90px;
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 50px;
+        background-color: $white;
+        padding: 60px 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        background-image: url("/src/assets/icons/quto.png");
+        background-repeat: no-repeat;
+        background-position: top 30px center;
+        width: calc(50% - 20px);
+        cursor: pointer;
+
+        @include media(924) {
+            width: 75%;
+        }
+
+        @include media(678) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        @include adaptive-value("font-size", 20, 14, 1);
+        line-height: 209%;
+        color: $black;
+    }
+
+    &__name {
+        font-weight: 500;
+        @include adaptive-value("font-size", 20, 14, 1);
+        line-height: 209%;
+        color: $blue;
+    }
+
+    &__happy {
+        font-weight: 500;
+        @include adaptive-value("font-size", 20, 14, 1);
+        line-height: 209%;
+        color: $gray;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 180px;
+        height: 135px;
+        background-color: $white;
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, 50%);
+    }
+}

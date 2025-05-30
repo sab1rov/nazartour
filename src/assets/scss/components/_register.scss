@@ -1,0 +1,51 @@
+.register {
+    @include adaptive-value("padding-top", 80, 40, 1);
+    @include adaptive-value("padding-bottom", 80, 40, 1);
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        @include adaptive-value("height", 600, 400, 1);
+        border-radius: 100px;
+        background-image: url("/images/register-img.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include adaptive-value("gap", 40, 20, 1);
+    }
+
+    &__title {
+        font-weight: 600;
+        @include adaptive-value("font-size", 48, 26, 1);
+        text-align: center;
+        color: $white;
+    }
+
+    &__button {
+        box-shadow: 4px 8px 25px 0 rgba(62, 134, 245, 0.25);
+        background-color: $white;
+        border: 1px solid $white;
+        border-radius: 25px;
+        font-weight: 500;
+        color: $blue;
+        transition: all 0.3s ease-in-out;
+        @include adaptive-value("padding-top", 25, 15, 1);
+        @include adaptive-value("padding-bottom", 25, 15, 1);
+        @include adaptive-value("padding-left", 35, 25, 1);
+        @include adaptive-value("padding-right", 35, 25, 1);
+        @include adaptive-value("font-size", 20, 16, 1);
+
+        &:hover {
+            background-color: transparent;
+            color: $white;
+        }
+    }
+}
