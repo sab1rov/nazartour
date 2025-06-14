@@ -47,7 +47,7 @@
         display: flex;
         align-items: center;
         gap: 50px;
-        @include media(991) {
+        @include media(1112) {
             display: none;
         }
     }
@@ -77,7 +77,7 @@
 
     &__menu {
         display: none;
-        @include media(991) {
+        @include media(1112) {
             display: block;
         }
     }

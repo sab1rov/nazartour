@@ -1,38 +1,85 @@
 .footer {
     @include adaptive-value("padding-bottom", 80, 40, 1);
 
-    &__wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &__top {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 24px;
         gap: 24px;
 
-        @include media(678) {
-            flex-direction: column;
+        @include media(1112) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media(600) {
+            grid-template-columns: 1fr;
         }
     }
 
-    &__left {
-        font-weight: 500;
-        @include adaptive-value("font-size", 20, 14, 1);
-        line-height: 209%;
-        color: $gray;
-    }
-
-    &__nav {
+    &__bottom {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        @include adaptive-value("gap", 50, 25, 1);
+        margin-top: 36px;
+        padding-top: 24px;
+        border-top: 1px solid #c6c5c5;
     }
 
-    &__nav-item {
+    &__bottom-title {
+        font-size: 16px;
+        color: #555351;
+    }
+
+    &__logo {
         font-weight: 500;
-        @include adaptive-value("font-size", 24, 16, 1);
-        color: rgba(0, 0, 0, 0.75);
-        transition: all 0.3s ease-in-out;
+        font-size: 36px;
+        line-height: 20px;
+        color: #1c1917;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__main-title {
+        font-size: 20px;
+        color: #1c1917;
+        font-weight: 600;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: #8d8c8b;
+    }
+
+    &__link {
+        font-size: 16px;
+        color: #8d8c8b;
+        transition: all 0.3s ease;
 
         &:hover {
-            opacity: .7;
+            color: $blue;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__social {
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            opacity: 0.5;
         }
     }
 }
