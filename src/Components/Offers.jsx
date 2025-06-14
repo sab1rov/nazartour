@@ -4,7 +4,7 @@ function Offers() {
     return (
         <section className="offers">
             <div className="container">
-                <h3 className="offers__title">Special Upcoming Offers</h3>
+                <h3 className="offers__title">Bizning Turlar</h3>
                 <div className="offers-cards">
                     {offersData.map((item) => (
                         <div className="offers-cards__item" key={item.id}>
@@ -30,10 +30,10 @@ function Offers() {
                                 </p>
                                 <div className="offers-cards__info">
                                     <p className="offers-cards__price">
-                                        <span>{item.price}$</span>/Person
+                                        <span>{item.price}$</span>/Kishi boshiga
                                     </p>
                                     <button className="offers-cards__button">
-                                        Book Now
+                                        A'loqa
                                     </button>
                                 </div>
                             </div>

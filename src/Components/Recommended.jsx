@@ -6,7 +6,7 @@ function Recommended() {
     return (
         <section className="recommended">
             <div className="container">
-                <h3 className="recommended__title">Recommended Destination</h3>
+                <h3 className="recommended__title">Tavsiya etilgan manzil</h3>
                 <div className="recommended-cards">
                     {recommendedData.map((item) => (
                         <div className="recommended-cards__item" key={item.id}>
@@ -25,7 +25,7 @@ function Recommended() {
                                 </p>
                                 <p className="recommended-cards__location">
                                     <img src={LocationImg} alt="location" />
-                                    Cambodia
+                                    {item.location}
                                 </p>
                             </div>
                         </div>

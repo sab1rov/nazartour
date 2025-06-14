@@ -13,9 +13,6 @@ function Comments() {
                                 {item.title}
                             </p>
                             <p className="comments-cards__name">-{item.name}</p>
-                            <p className="comments-cards__happy">
-                                Happy Trello
-                            </p>
                             <div className="comments-cards__img">
                                 <img src={item.img} alt={item.name} />
                                 <p className="recommended-cards__rate">
