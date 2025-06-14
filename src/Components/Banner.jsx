@@ -6,26 +6,26 @@ function Banner() {
             <div className="container">
                 <header className="banner__header header">
                     <a href="/" className="header__link">
-                        NazarTour
+                        Nazartour.uz
                     </a>
                     <nav className="header__nav">
                         <a href="#" className="header__nav-item">
-                            Review
+                            Asosiy
                         </a>
                         <a href="#" className="header__nav-item">
-                            Tips
+                            Safarlar
                         </a>
                         <a href="#" className="header__nav-item">
-                            Alerts
+                            Biz haqimizda
                         </a>
                         <a href="#" className="header__nav-item">
-                            Blog
+                            Takliflar
                         </a>
                         <a
                             href="#"
                             className="header__nav-item header__nav-item--white"
                         >
-                            Blog
+                            Til
                         </a>
                     </nav>
 
@@ -45,11 +45,10 @@ function Banner() {
                 </header>
                 <div className="banner__content">
                     <h1 className="banner__title">
-                        Discover Your Life, Travel Where You Want
+                        Sarguzasht aynan shu yerda boshlanadi
                     </h1>
                     <p className="banner__subtitle">
-                        Would you explore natur paradise in the world, let’s
-                        find the best destination in world with us.
+                    Dunyoning tabiiy jannatlarini kashf qilishni xohlaysizmi? Eng zo‘r yo‘nalishlarni birga topamiz.
                     </p>
                 </div>
             </div>
