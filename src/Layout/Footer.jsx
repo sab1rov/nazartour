@@ -1,31 +1,30 @@
 import React from "react";
+import useLanguage from "../hooks/useLanguage";
 
 function Footer() {
+    const t = useLanguage();
     return (
-        <footer className="footer">
+        <footer className="footer" id="footer">
             <div className="container">
                 <div className="footer__top">
                     <div className="footer__main">
                         <a href="/" className="footer__logo">
                             Nazartour.uz
                         </a>
-                        <p className="footer__text">
-                            Sarguzasht aynan shu yerda boshlanadi
-                        </p>
+                        <p className="footer__text">{t("banner_title")}</p>
                     </div>
                     <div className="footer__main">
-                        <h4 className="footer__main-title">Manzil</h4>
+                        <h4 className="footer__main-title">{t("adress")}</h4>
                         <a
                             target="_blank"
                             href="https://maps.app.goo.gl/P42HaGuwcvSZmWkM7"
                             className="footer__link"
                         >
-                            Uzbekistan, Xorazm viloyati, Urganch, Sanoatchilar
-                            ko'chasi
+                            {t("location")}
                         </a>
                     </div>
                     <div className="footer__main">
-                        <h4 className="footer__main-title">Aloqa</h4>
+                        <h4 className="footer__main-title">{t("contact")}</h4>
                         <div className="footer__links">
                             <a
                                 href="tel:+998941112222"
@@ -48,7 +47,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="footer__main">
-                        <h4 className="footer__main-title">Sahifalarimiz</h4>
+                        <h4 className="footer__main-title">{t("web_pages")}</h4>
                         <div className="footer__socials">
                             <a
                                 href="https://www.instagram.com/nazartour.uz?igsh=cDVpMGxnNTRha2Vh&utm_source=qr"
@@ -92,9 +91,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer__bottom">
-                    <p className="footer__bottom-title">
-                        Copyright © Nazartour , 2025
-                    </p>
+                    <p className="footer__bottom-title">{t("footer_title")}</p>
                 </div>
             </div>
         </footer>
