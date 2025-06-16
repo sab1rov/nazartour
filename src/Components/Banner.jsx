@@ -61,7 +61,7 @@ function Banner() {
                                 className="custom-select__main"
                                 onClick={() => openModal()}
                             >
-                                {langValue}
+                                {langValue == "uz" ? "Uz" : "Ру"}
                             </button>
                             <ul
                                 className="custom-select__items-wrap"
