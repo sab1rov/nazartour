@@ -40,8 +40,8 @@ export const languages = {
         ru: "Hа человека",
     },
     location: {
-        uz: "Uzbekistan, Xorazm viloyati, Urganch, Sanoatchilar ko'chasi",
-        ru: "Узбекистан, Хорезмская область, Ургенч, улица Саноатчилар",
+        uz: "Uzbekistan, Xorazm viloyati, Urganch, Sanoatchilar ko'chasi, 48F uy.",
+        ru: "Узбекистан, Хорезмская область, Ургенч, улица Саноатчилар, 48Ф дом.",
     },
     adress: {
         uz: "Manzil",

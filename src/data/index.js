@@ -2,8 +2,8 @@ const offersData = [
     {
         id: 1,
         img: "/images/offers-image.png",
-        date: "14 FEB 2022",
-        date_ru: "14 ФЕВ 2022",
+        date: "07 JUL 2025",
+        date_ru: "07 ИЮЛ 2025",
         tour_type: "Relax",
         tour_type_ru: "Расслабляться",
         tour_time: "4 kun, 3 kecha",
@@ -15,8 +15,8 @@ const offersData = [
     {
         id: 2,
         img: "/images/jizzax.png",
-        date: "18 JUN 2022",
-        date_ru: "18 ИЮН 2022",
+        date: "14 JUL 2025",
+        date_ru: "14 ИЮЛ 2025",
         tour_type: "Advanture",
         tour_type_ru: "Приключение",
         tour_time: "4 kun, 3 kecha",
@@ -28,8 +28,8 @@ const offersData = [
     {
         id: 3,
         img: "/images/samarqand.png",
-        date: "22 DEC 2022",
-        date_ru: "22 ДЕК 2022",
+        date: "20 JUL 2025",
+        date_ru: "20 ИЮЛ 2025",
         tour_type: "Relax",
         tour_type_ru: "Расслабляться",
         tour_time: "7 kun, 6 kecha",
