@@ -8,7 +8,7 @@
         justify-content: center;
         width: 100%;
         @include adaptive-value("height", 600, 400, 1);
-        border-radius: 100px;
+        @include adaptive-value("border-radius", 100, 60, 1);
         background-image: url("/images/register-img.png");
         background-repeat: no-repeat;
         background-position: center;
