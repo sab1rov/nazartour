@@ -47,9 +47,9 @@ function Offers() {
                                         <span>{item.price}$</span>/
                                         {t("per_man")}
                                     </p>
-                                    <button className="offers-cards__button">
+                                    <a href="#contact" className="offers-cards__button">
                                         {t("contact")}
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-import { About, Banner, Comments, Offers, Recommended, Register } from "./Components";
+import { About, Banner, Comments, Contact, Offers, Recommended, Register } from "./Components";
 import { Footer } from "./Layout";
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
                 <About />
                 <Recommended />
                 <Comments />
+                <Contact />
                 <Register />
             </main>
             <Footer />

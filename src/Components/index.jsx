@@ -4,5 +4,6 @@ import About from "./About";
 import Recommended from "./Recommended";
 import Comments from "./Comments";
 import Register from "./Register";
+import Contact from "./Contact";
 
-export { Banner, Offers, About, Recommended, Comments, Register };
+export { Banner, Offers, About, Recommended, Comments, Register, Contact };

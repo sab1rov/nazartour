@@ -1,0 +1,114 @@
+.contact {
+    margin: 80px 0;
+    &__wrap {
+        display: flex;
+        gap: 24px;
+        @include media(991) {
+            flex-direction: column;
+        }
+    }
+
+    &__location {
+        width: 48%;
+
+        iframe {
+            border-radius: 36px;
+        }
+
+        @include media(991) {
+            width: 100%;
+        }
+    }
+}
+
+.contact-form {
+    width: 48%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 32px;
+    .question__error {
+        font-style: normal;
+        font-weight: 400;
+        color: red;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .question_input {
+        input {
+            width: 100%;
+            padding: 14px 32px;
+            font-size: 18px;
+            line-height: 27px;
+            border-radius: 12px;
+            border: 2px solid #b4b4b4;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            &:focus {
+                border: 2px solid $blue;
+            }
+            &::placeholder {
+                font-style: normal;
+                font-weight: 400;
+
+                color: #b4b4b4;
+            }
+        }
+    }
+    .question_textarea {
+        margin-top: 16px;
+        textarea {
+            width: 100%;
+            padding: 14px 32px;
+            font-size: 18px;
+            line-height: 27px;
+            border-radius: 12px;
+            border: 2px solid #b4b4b4;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            resize: none;
+            &:focus {
+                border: 2px solid $blue;
+            }
+            &::placeholder {
+                font-style: normal;
+                font-weight: 400;
+                color: #b4b4b4;
+            }
+        }
+    }
+    .question_btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #ffffff;
+        background: $blue;
+        box-shadow: 0px 4px 10px $blue;
+        @include adaptive-value(width, 250, 125, 1);
+        border: 1px solid $blue;
+        margin-top: 16px;
+        padding: 11px 17px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 16px;
+        // opacity: 0.1;
+        // cursor: not-allowed;
+        &.valid {
+            opacity: 1;
+            cursor: pointer;
+        }
+        &:hover {
+            background: transparent;
+            color: $blue;
+            box-shadow: none;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        width: 100%;
+    }
+}

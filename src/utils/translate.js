@@ -87,4 +87,24 @@ export const languages = {
         uz: "Sahifalarimiz",
         ru: "Наши страницы",
     },
+    input_name: {
+        uz: "Iltimos ismingizni kiriting!",
+        ru: "Пожалуйста, введите Ваше имя!",
+    },
+    name_lastname: {
+        uz: "Ism Familiya",
+        ru: "Имя Фамилия",
+    },
+    input_phone: {
+        uz: "Iltimos raqamingizni kiriting!",
+        ru: "Пожалуйста, введите ваш номер!",
+    },
+    write_desc: {
+        uz: "Izohingizni yozing...",
+        ru: "Напишите свой комментарий...",
+    },
+    input_desc: {
+        uz: "Kamida 10 ta belgi kiriting!",
+        ru: "Пожалуйста, введите не менее 10 символов!",
+    },
 };

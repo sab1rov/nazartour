@@ -38,7 +38,7 @@ function About() {
                             <br />
                             {t("about_subtitle")}
                         </p>
-                        <a href="#footer" className="about__button">
+                        <a href="#contact" className="about__button">
                             {t("contact")}
                         </a>
                     </div>
