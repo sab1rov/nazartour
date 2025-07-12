@@ -40,9 +40,6 @@ function Contact() {
         const message = `
             Name: ${inputValue.desc}, Phone number: ${inputValue.phone}, Description: ${inputValue.desc}
         `;
-        await fetch(
-            `https://api.telegram.org/bot7602484416:AAH7HiX5EliQ2d8u4-1fU0f2bLg36VoslEA/sendMessage?text=${message}&chat_id=@nazartour_group`
-        );
     };
 
     const isValid =
@@ -69,6 +66,11 @@ function Contact() {
         }
         if (isValid) {
             postMessage();
+            setInputValue({
+                name: "",
+                phone: "+998",
+                desc: "",
+            });
         }
     };
     return (
