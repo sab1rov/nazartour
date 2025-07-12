@@ -7,7 +7,7 @@ function Contact() {
         name: "",
         desc: "",
     });
-    const t = useLanguage()
+    const t = useLanguage();
 
     const phoneError = useRef();
     const nameError = useRef();
@@ -84,28 +84,28 @@ function Contact() {
                                 <input
                                     type="text"
                                     value={inputValue.name}
-                                    placeholder="Ism Familiya"
+                                    placeholder={t("name_lastname")}
                                     onChange={(e) => getNameValue(e)}
                                 />
                                 <span
                                     className="question__error"
                                     ref={nameError}
                                 >
-                                    Iltimos ismingizni kiriting!
+                                    {t("input_name")}
                                 </span>
                             </div>
                             <div className="question_input">
                                 <input
                                     type="text"
                                     value={inputValue.phone}
-                                    placeholder="telefon raqam"
+                                    placeholder={t("phone")}
                                     onChange={(e) => getInValue(e)}
                                 />
                                 <span
                                     className="question__error"
                                     ref={phoneError}
                                 >
-                                    Iltimos raqamingizni kiriting!
+                                    {t("input_phone")}
                                 </span>
                             </div>
 
@@ -114,21 +114,21 @@ function Contact() {
                                     cols="10"
                                     rows="5"
                                     value={inputValue.desc}
-                                    placeholder="Izohingizni yozing..."
+                                    placeholder={t("write_desc")}
                                     onChange={(e) => getAreaValue(e)}
                                 ></textarea>
                                 <span
                                     className="question__error"
                                     ref={textError}
                                 >
-                                    Kamida 10 ta belgi kiriting!
+                                    {t("input_desc")}
                                 </span>
                             </div>
                             <button
                                 className={`question_btn ${isValid && "valid"}`}
                                 type="submit"
                             >
-                                Jo'natish
+                                {t("send")}
                             </button>
                         </form>
                         <div className="contact__location">

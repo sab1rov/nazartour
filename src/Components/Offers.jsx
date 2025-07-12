@@ -21,6 +21,8 @@ function Offers() {
                                 <p className="offers-cards__date">
                                     {language == "uz"
                                         ? item.date
+                                        : language == "eng"
+                                        ? item.date_eng
                                         : item.date_ru}
                                 </p>
                             </div>
@@ -29,17 +31,23 @@ function Offers() {
                                     <p className="offers-cards__type">
                                         {language == "uz"
                                             ? item.tour_type
+                                            : language == "eng"
+                                            ? item.tour_type_eng
                                             : item.tour_type_ru}
                                     </p>
                                     <p className="offers-cards__time">
                                         {language == "uz"
                                             ? item.tour_time
+                                            : language == "eng"
+                                            ? item.tour_time_eng
                                             : item.tour_time_ru}
                                     </p>
                                 </div>
                                 <p className="offers-cards__city">
                                     {language == "uz"
                                         ? item.city
+                                        : language == "eng"
+                                        ? item.city_eng
                                         : item.city_ru}
                                 </p>
                                 <div className="offers-cards__info">
@@ -47,7 +55,10 @@ function Offers() {
                                         <span>{item.price}$</span>/
                                         {t("per_man")}
                                     </p>
-                                    <a href="#contact" className="offers-cards__button">
+                                    <a
+                                        href="#contact"
+                                        className="offers-cards__button"
+                                    >
                                         {t("contact")}
                                     </a>
                                 </div>

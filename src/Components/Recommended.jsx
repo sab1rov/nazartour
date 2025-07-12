@@ -32,12 +32,16 @@ function Recommended() {
                                 <p className="recommended-cards__title">
                                     {language == "uz"
                                         ? item.destination_name
+                                        : language == "eng"
+                                        ? item.destination_name_eng
                                         : item.destination_name_ru}
                                 </p>
                                 <p className="recommended-cards__location">
                                     <img src={LocationImg} alt="location" />
                                     {language == "uz"
                                         ? item.location
+                                        : language === "eng"
+                                        ? item.location_eng
                                         : item.location_ru}
                                 </p>
                             </div>
